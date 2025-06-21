@@ -4,9 +4,10 @@ export function createUrl(keyword) {
         apiKey: '50902999-34d3d718e1412684e61a556a9',
         query: keyword,
         imageType: "photo",
-        orientation: "hohorizontal",
+        orientation: "horizontal",
         safesearch: true,
     }
+    console.log('Options:', options);
     
     const url = new URL(options.baseUrl);
     url.search = new URLSearchParams({
